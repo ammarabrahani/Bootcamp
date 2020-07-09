@@ -30,6 +30,3 @@ jobs:
     
     - name: deploying on surge
       run: surge ./ dramatic-alarm.surge.sh --token ${{ secrets.SURGE_TOKEN }}
-
-        run: surge ./ dramatic-alarm.surge.sh --token ${{ secrets.SURGE_TOKEN }}
-
