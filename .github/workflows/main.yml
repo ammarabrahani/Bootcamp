@@ -34,8 +34,5 @@ jobs:
     - name: Creating build
       run: yarn build
     
-    - name: installing surge  
-      run: npm install -g surge
-    
     - name: deploying on surge
       run: surge ./build http://dramatic-alarm.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
